@@ -39,7 +39,8 @@ collections:
           - { label: "Book subtitle", name: "bookEn", widget: "string" }
           - { label: "About — pull quote", name: "aboutQuote", widget: "text" }
           - { label: "About — photo", name: "aboutPhoto", widget: "image" }
-          - { label: "About — paragraphs", name: "about", widget: "list" }
+          - { label: "About — paragraphs (homepage)", name: "about", widget: "list" }
+          - { label: "Long biography (CV page)", name: "bioLong", widget: "list" }
           - label: "Current roles & affiliations"
             name: "roles"
             widget: "list"
@@ -87,6 +88,7 @@ collections:
             name: "items"
             widget: "list"
             fields:
+              - { label: "Show on homepage?", name: "featured", widget: "boolean", default: false, hint: "On = appears in the homepage 'Selected writing'. Everything shows on the full Publications page." }
               - { label: "Year", name: "year", widget: "string" }
               - { label: "Type", name: "type", widget: "select", options: ["book","article","chapter"] }
               - { label: "Title", name: "title", widget: "string" }
@@ -145,6 +147,41 @@ collections:
                 fields:
                   - { label: "Name", name: "name", widget: "string" }
                   - { label: "Detail (optional)", name: "detail", widget: "string", required: false }
+
+  # ---------- Teaching ----------
+  - name: "teaching"
+    label: "Teaching"
+    files:
+      - name: "list"
+        label: "Teaching"
+        file: "src/_data/teaching.json"
+        fields:
+          - { label: "Intro paragraph", name: "intro", widget: "text" }
+          - label: "Courses & seminars"
+            name: "items"
+            widget: "list"
+            fields:
+              - { label: "Course / area title", name: "title", widget: "string" }
+              - { label: "Level", name: "level", widget: "string" }
+              - { label: "Description", name: "detail", widget: "text" }
+
+  # ---------- Media & Public Engagement ----------
+  - name: "media"
+    label: "Media & Public Engagement"
+    files:
+      - name: "list"
+        label: "Media items"
+        file: "src/_data/media.json"
+        fields:
+          - label: "Media items"
+            name: "items"
+            widget: "list"
+            fields:
+              - { label: "Outlet / venue", name: "outlet", widget: "string" }
+              - { label: "Type", name: "type", widget: "string" }
+              - { label: "Title", name: "title", widget: "string" }
+              - { label: "Year", name: "year", widget: "string" }
+              - { label: "Link (optional)", name: "url", widget: "string", required: false }
 
   # ---------- Fieldwork map ----------
   - name: "fieldwork"

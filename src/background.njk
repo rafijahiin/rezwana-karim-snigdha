@@ -16,6 +16,15 @@ pageDescription: "Academic background, education, positions, grants, awards, lea
 
 <section class="section">
   <div class="container">
+    <div class="section-head reveal" style="margin-bottom:1.4rem"><div class="eyebrow">Biography</div><h2>A fuller story</h2></div>
+    <div class="bio reveal" data-delay="1">
+      {% for p in site.bioLong %}<p>{{ p | safe }}</p>{% endfor %}
+    </div>
+  </div>
+</section>
+
+<section class="section section--alt">
+  <div class="container">
     <div class="about-grid">
       <div class="section-head reveal sticky-head" style="margin-bottom:0"><div class="eyebrow">Appointments</div><h2>Academic positions</h2></div>
       <div class="timeline reveal" data-delay="1">
@@ -28,7 +37,7 @@ pageDescription: "Academic background, education, positions, grants, awards, lea
   </div>
 </section>
 
-<section class="section section--alt">
+<section class="section">
   <div class="container">
     <div class="about-grid">
       <div class="section-head reveal sticky-head" style="margin-bottom:0"><div class="eyebrow">Education</div><h2>Degrees</h2></div>
@@ -36,6 +45,22 @@ pageDescription: "Academic background, education, positions, grants, awards, lea
         <div class="tl-item"><div class="when">2021 · New Zealand</div><h3>PhD, Auckland University of Technology</h3><p class="where">Thesis: “Beyond Binaries: An Ethnographic Study of Hijra in Dhaka, Bangladesh”</p></div>
         <div class="tl-item"><div class="when">2007 · Jahangirnagar University</div><h3>MSS in Anthropology — First Class, 1st Position</h3><p class="where">Thesis: “Constitution and Reconstitution of Self: The Middle-Class Women in Dhaka City”</p></div>
         <div class="tl-item"><div class="when">2006 · Jahangirnagar University</div><h3>BSS in Anthropology — First Class, 1st Position</h3><p class="where">Department of Anthropology</p></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section section--alt">
+  <div class="container">
+    <div class="about-grid">
+      <div class="section-head reveal sticky-head" style="margin-bottom:0"><div class="eyebrow">Teaching</div><h2>Courses &amp; seminars</h2><p class="lead">{{ teaching.intro }}</p></div>
+      <div class="teach-list reveal" data-delay="1">
+        {% for t in teaching.items %}
+        <article class="teach-item">
+          <div class="teach-top"><h3>{{ t.title }}</h3><span class="teach-level">{{ t.level }}</span></div>
+          <p>{{ t.detail }}</p>
+        </article>
+        {% endfor %}
       </div>
     </div>
   </div>

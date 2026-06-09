@@ -411,6 +411,30 @@ p { max-width: 68ch; }
 .sticky-head { position: sticky; top: calc(var(--header-h) + 2rem); align-self: start; }
 @media (max-width: 920px) { .sticky-head { position: static; } }
 
+/* ---------- Teaching ---------- */
+.teach-list { display: grid; gap: 0; }
+.teach-item { padding: 1.3rem 0; border-top: 1px solid var(--line); }
+.teach-item:first-child { border-top: none; padding-top: 0; }
+.teach-top { display: flex; align-items: baseline; justify-content: space-between; gap: 1rem; flex-wrap: wrap; }
+.teach-item h3 { font-size: 1.34rem; }
+.teach-level { font-size: .82rem; font-weight: 600; letter-spacing: .04em; color: var(--gold); white-space: nowrap; }
+.teach-item p { font-size: var(--step--1); color: var(--ink-mute); margin-top: .35rem; }
+
+/* ---------- Media & Public Engagement ---------- */
+.media-list { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: clamp(1rem, 2vw, 1.6rem); }
+.media-item { display: block; background: var(--paper); border: 1px solid var(--line); border-radius: var(--radius); padding: 1.6rem; transition: transform .35s var(--ease), box-shadow .35s var(--ease), border-color .35s; }
+a.media-item:hover { transform: translateY(-5px); box-shadow: var(--shadow-md); border-color: color-mix(in srgb, var(--gold) 35%, var(--line)); }
+.media-meta { display: flex; justify-content: space-between; gap: 1rem; margin-bottom: .7rem; }
+.media-outlet { font-weight: 700; font-size: .82rem; letter-spacing: .04em; text-transform: uppercase; color: var(--gold); }
+.media-year { font-size: .82rem; color: var(--ink-mute); white-space: nowrap; }
+.media-item h3 { font-size: 1.26rem; line-height: 1.3; margin-bottom: .6rem; }
+.media-type { display: inline-flex; align-items: center; gap: .4rem; font-size: var(--step--1); color: var(--ink-soft); }
+
+/* ---------- Biography (CV) ---------- */
+.bio { max-width: 74ch; }
+.bio p { font-size: var(--step-0); color: var(--ink-soft); line-height: 1.7; }
+.bio p + p { margin-top: 1.1rem; }
+
 /* Gallery: 3–4 across, balanced */
 .gallery { grid-template-columns: repeat(auto-fit, minmax(190px, 1fr)); }
 /* Projects: 3 across on desktop (avoids a lone card) */

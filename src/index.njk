@@ -87,8 +87,29 @@ navPrefix: ""
   </div>
 </section>
 
+<!-- ===== Teaching ===== -->
+<section class="section" id="teaching">
+  <div class="container">
+    <div class="about-grid">
+      <div class="section-head reveal sticky-head" style="margin-bottom:0">
+        <div class="eyebrow">Teaching</div>
+        <h2>In the classroom</h2>
+        <p class="lead">{{ teaching.intro }}</p>
+      </div>
+      <div class="teach-list reveal" data-delay="1">
+        {% for t in teaching.items %}
+        <article class="teach-item">
+          <div class="teach-top"><h3>{{ t.title }}</h3><span class="teach-level">{{ t.level }}</span></div>
+          <p>{{ t.detail }}</p>
+        </article>
+        {% endfor %}
+      </div>
+    </div>
+  </div>
+</section>
+
 <!-- ===== Publications ===== -->
-<section class="section" id="publications">
+<section class="section section--alt" id="publications">
   <div class="container">
     <div class="section-head reveal">
       <div class="eyebrow">Publications</div>
@@ -103,13 +124,13 @@ navPrefix: ""
     </div>
     {% set labels = { "book": "Book", "article": "Article", "chapter": "Chapter" } %}
     <div class="pub-list">
-      {% for p in publications.items %}
+      {% for p in publications.items %}{% if p.featured %}
       <article class="pub reveal" data-type="{{ p.type }}">
         <span class="year">{{ p.year }}</span>
         <div><h3>{{ p.title | safe }}</h3><p class="venue">{{ p.venue | safe }}</p></div>
         <span class="tag tag--{{ p.type }}">{{ labels[p.type] }}</span>
       </article>
-      {% endfor %}
+      {% endif %}{% endfor %}
     </div>
     <div class="hero-cta reveal" style="margin-top:2rem">
       <a href="/publications/" class="btn btn--ghost">All publications &amp; citations
@@ -120,7 +141,7 @@ navPrefix: ""
 </section>
 
 <!-- ===== Talks ===== -->
-<section class="section section--alt" id="talks">
+<section class="section" id="talks">
   <div class="container">
     <div class="about-grid">
       <div class="section-head reveal sticky-head" style="margin-bottom:0">
@@ -141,6 +162,26 @@ navPrefix: ""
     <div class="gallery reveal" data-delay="1">
       {% for g in site.gallery %}
       <figure class="gallery-item"><img src="{{ g.image }}" alt="{{ g.caption }}" loading="lazy" /><figcaption>{{ g.caption }}</figcaption></figure>
+      {% endfor %}
+    </div>
+  </div>
+</section>
+
+<!-- ===== Media & Public Engagement ===== -->
+<section class="section section--alt" id="media">
+  <div class="container">
+    <div class="section-head reveal">
+      <div class="eyebrow">Media &amp; Public Engagement</div>
+      <h2>In the public conversation</h2>
+      <p class="lead">Interviews, features, keynotes, and broadcast commentary translating ethnographic research into public debate.</p>
+    </div>
+    <div class="media-list reveal">
+      {% for m in media.items %}
+      {% if m.url %}<a class="media-item" href="{{ m.url }}" target="_blank" rel="noopener">{% else %}<div class="media-item">{% endif %}
+        <div class="media-meta"><span class="media-outlet">{{ m.outlet }}</span><span class="media-year">{{ m.year }}</span></div>
+        <h3>{{ m.title | safe }}</h3>
+        <span class="media-type">{{ m.type }}{% if m.url %} <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="14" height="14"><path d="M7 17 17 7M9 7h8v8"/></svg>{% endif %}</span>
+      {% if m.url %}</a>{% else %}</div>{% endif %}
       {% endfor %}
     </div>
   </div>
