@@ -1,0 +1,165 @@
+backend:
+  name: git-gateway
+  branch: main
+
+# Lets you test the CMS locally with: npx decap-server  (run alongside the site)
+local_backend: true
+
+media_folder: "src/assets/img"
+public_folder: "/assets/img"
+
+site_url: https://rezwana-karim-snigdha.netlify.app
+display_url: https://rezwana-karim-snigdha.netlify.app
+logo_url: /assets/img/portrait.jpg
+
+collections:
+  # ---------- Site, hero, about, contact ----------
+  - name: "site"
+    label: "Site, Hero & Contact"
+    files:
+      - name: "main"
+        label: "Site content"
+        file: "src/_data/site.json"
+        description: "Name, hero, about text, photos, contact details and profile links."
+        fields:
+          - { label: "Browser tab title", name: "title", widget: "string" }
+          - { label: "SEO description", name: "description", widget: "text" }
+          - { label: "Live site URL", name: "url", widget: "string", hint: "Used in SEO tags. Update after you know your Netlify address." }
+          - { label: "Header — first part of name", name: "brandTop", widget: "string" }
+          - { label: "Header — highlighted last name", name: "brandAccent", widget: "string" }
+          - { label: "Hero eyebrow", name: "eyebrow", widget: "string" }
+          - { label: "Hero name — line 1", name: "nameTop", widget: "string" }
+          - { label: "Hero name — gold accent line", name: "nameAccent", widget: "string" }
+          - { label: "Hero role line", name: "heroRole", widget: "text" }
+          - { label: "Hero grant banner", name: "grant", widget: "string" }
+          - { label: "Hero research chips", name: "chips", widget: "list", hint: "Short topic tags shown under the grant banner." }
+          - { label: "Hero portrait", name: "portrait", widget: "image" }
+          - { label: "Portrait pill text", name: "portraitPill", widget: "string" }
+          - { label: "Book title (Bengali)", name: "bookBn", widget: "string" }
+          - { label: "Book subtitle", name: "bookEn", widget: "string" }
+          - { label: "About — pull quote", name: "aboutQuote", widget: "text" }
+          - { label: "About — photo", name: "aboutPhoto", widget: "image" }
+          - { label: "About — paragraphs", name: "about", widget: "list" }
+          - label: "Current roles & affiliations"
+            name: "roles"
+            widget: "list"
+            fields:
+              - { label: "Role", name: "role", widget: "string" }
+              - { label: "Organisation", name: "org", widget: "string" }
+          - label: "Speaking gallery photos"
+            name: "gallery"
+            widget: "list"
+            fields:
+              - { label: "Image", name: "image", widget: "image" }
+              - { label: "Caption", name: "caption", widget: "string" }
+          - { label: "Contact email", name: "email", widget: "string" }
+          - { label: "Contact phone", name: "phone", widget: "string" }
+          - { label: "Contact address", name: "address", widget: "text" }
+          - { label: "Google Scholar URL", name: "scholar", widget: "string" }
+          - { label: "ResearchGate URL", name: "researchgate", widget: "string" }
+          - { label: "University profile URL", name: "university", widget: "string" }
+
+  # ---------- Research areas ----------
+  - name: "research"
+    label: "Research Areas"
+    files:
+      - name: "list"
+        label: "Research areas"
+        file: "src/_data/research.json"
+        fields:
+          - label: "Areas"
+            name: "items"
+            widget: "list"
+            fields:
+              - { label: "Icon", name: "icon", widget: "select", options: ["hijra","feminist","body","medical","climate","media","urban","srh"] }
+              - { label: "Title", name: "title", widget: "string" }
+              - { label: "Description", name: "body", widget: "text" }
+
+  # ---------- Publications ----------
+  - name: "publications"
+    label: "Publications"
+    files:
+      - name: "list"
+        label: "Publications"
+        file: "src/_data/publications.json"
+        fields:
+          - label: "Publications"
+            name: "items"
+            widget: "list"
+            fields:
+              - { label: "Year", name: "year", widget: "string" }
+              - { label: "Type", name: "type", widget: "select", options: ["book","article","chapter"] }
+              - { label: "Title", name: "title", widget: "string" }
+              - { label: "Venue / citation", name: "venue", widget: "text" }
+
+  # ---------- Talks ----------
+  - name: "talks"
+    label: "Talks & Keynotes"
+    files:
+      - name: "list"
+        label: "Talks"
+        file: "src/_data/talks.json"
+        fields:
+          - label: "Talks"
+            name: "items"
+            widget: "list"
+            fields:
+              - { label: "When / where", name: "when", widget: "string" }
+              - { label: "Title", name: "title", widget: "string" }
+              - { label: "Detail", name: "where", widget: "string" }
+
+  # ---------- Projects ----------
+  - name: "projects"
+    label: "Projects"
+    files:
+      - name: "list"
+        label: "Projects"
+        file: "src/_data/projects.json"
+        fields:
+          - label: "Projects"
+            name: "items"
+            widget: "list"
+            fields:
+              - { label: "Meta (dates · type)", name: "meta", widget: "string" }
+              - { label: "Title", name: "title", widget: "string" }
+              - { label: "Description", name: "body", widget: "text" }
+              - { label: "Role", name: "role", widget: "string" }
+
+  # ---------- Recognition ----------
+  - name: "recognition"
+    label: "Recognition & Service"
+    files:
+      - name: "groups"
+        label: "Recognition groups"
+        file: "src/_data/recognition.json"
+        fields:
+          - label: "Groups"
+            name: "groups"
+            widget: "list"
+            fields:
+              - { label: "Icon", name: "icon", widget: "select", options: ["award","review","leadership","membership"] }
+              - { label: "Group title", name: "title", widget: "string" }
+              - label: "Items"
+                name: "items"
+                widget: "list"
+                fields:
+                  - { label: "Name", name: "name", widget: "string" }
+                  - { label: "Detail (optional)", name: "detail", widget: "string", required: false }
+
+  # ---------- Fieldwork map ----------
+  - name: "fieldwork"
+    label: "Fieldwork Map"
+    files:
+      - name: "list"
+        label: "Map points"
+        file: "src/_data/fieldwork.json"
+        fields:
+          - label: "Sites"
+            name: "items"
+            widget: "list"
+            fields:
+              - { label: "Place name", name: "name", widget: "string" }
+              - { label: "Note", name: "note", widget: "string" }
+              - { label: "Latitude", name: "lat", widget: "number", value_type: "float" }
+              - { label: "Longitude", name: "lng", widget: "number", value_type: "float" }
+              - { label: "Marker colour", name: "color", widget: "select", options: ["plum","terra","teal"] }

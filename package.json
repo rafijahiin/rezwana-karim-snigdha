@@ -1,0 +1,13 @@
+{
+  "name": "rezwana-snigdha-site",
+  "version": "1.0.0",
+  "description": "Personal academic site for Dr. Rezwana Karim Snigdha — editable via Decap CMS, built with Eleventy.",
+  "license": "MIT",
+  "scripts": {
+    "start": "eleventy --serve --port=8080",
+    "build": "eleventy"
+  },
+  "devDependencies": {
+    "@11ty/eleventy": "^3.0.0"
+  }
+}
