@@ -1,33 +1,4 @@
 {
-  "title": "Dr. Rezwana Karim Snigdha — Feminist Anthropologist, Bangladesh",
-  "description": "Dr. Rezwana Karim Snigdha is one of Bangladesh's foremost feminist anthropologists — Associate Professor at Jahangirnagar University, known for ethnographic research on Hijra communities, gender, body and belonging in South Asia.",
-  "url": "https://rezwana-karim-snigdha.netlify.app",
-  "brandTop": "Rezwana Karim",
-  "brandAccent": "Snigdha",
-  "eyebrow": "Feminist Anthropologist · Bangladesh",
-  "nameTop": "Rezwana Karim",
-  "nameAccent": "Snigdha",
-  "heroRole": "Associate Professor of Anthropology, Jahangirnagar University · PhD, Auckland University of Technology",
-  "grant": "World Bank / UGC HEAT Grant — USD 80,000 · 2025 · Top 10.2% nationally",
-  "chips": [
-    "Hijra & Transgender Studies",
-    "Gender & Sexuality",
-    "Feminist Anthropology",
-    "Medical Anthropology",
-    "Body & Identity Politics"
-  ],
-  "portrait": "/assets/img/portrait.jpg",
-  "portraitPill": "15+ yrs fieldwork",
-  "bookBn": "নারীসত্তার অন্বেষণে",
-  "bookEn": "In Search of Women's Self · 2023",
-  "aboutQuote": "Ethnographic explorations at the threshold of gender, body, and belonging.",
-  "aboutPhoto": "/assets/img/about.jpg",
-  "about": [
-    "Dr. Rezwana Karim Snigdha is an anthropologist, gender expert, and feminist scholar with over fifteen years of experience in teaching, ethnographic research, training, and advocacy at Jahangirnagar University, where she serves as Associate Professor of Anthropology.",
-    "She earned her PhD at the Auckland University of Technology (2021); her doctoral thesis, “Beyond Binaries: An Ethnographic Study of Hijra in Dhaka, Bangladesh,” is recognised internationally for its sensitive, situated account of gender-diverse life in South Asia.",
-    "Her work moves across gender justice, sexuality and reproductive health, body politics, climate vulnerability, and medical anthropology — always centred on marginalised and gender-diverse communities. She is a member of the Sex Tech Lab at The New School, New York, and holds part-time faculty and review roles at home and abroad.",
-    "Beyond the academy she is a frequent public voice — a television talk-show panellist and commentator on gender justice, censorship, and social change — translating rigorous ethnography into public debate across Bangladesh."
-  ],
   "bioLong": [
     "Dr. Rezwana Karim Snigdha is an anthropologist, gender expert, and feminist scholar with over twenty years of experience in teaching, ethnographic research, training, and advocacy. She is Associate Professor of Anthropology at Jahangirnagar University, where she has taught since 2010, and serves concurrently as part-time Associate Professor at North South University.",
     "She completed her BSS (2006) and MSS (2007) in Anthropology at Jahangirnagar University — standing First Class, First Position in both — before earning her PhD at the Auckland University of Technology, New Zealand (2021). Her doctoral thesis, “Beyond Binaries: An Ethnographic Study of Hijra in Dhaka, Bangladesh,” is recognised internationally for its sensitive, situated account of gender-diverse life in South Asia.",
@@ -35,24 +6,87 @@
     "She has presented at the World Anthropology Union and IUAES world congresses and lectured at Jawaharlal Nehru University, South Asian University, and the University of Iowa. In 2025 she was awarded a competitive World Bank / UGC HEAT research grant of USD 80,000 — placing among the top 10.2% of proposals nationally.",
     "Alongside her scholarship she leads and serves widely — as Hall Provost of Begum Sufia Kamal Hall, a Trustee of the National Child Welfare Trust, International Coordinator for IMRF Bangladesh, and a peer reviewer for the Journal of the Royal Anthropological Institute, Asian Women, the Journal of Homosexuality, and Contemporary South Asia."
   ],
-  "roles": [
-    { "role": "Associate Professor of Anthropology", "org": "Jahangirnagar University" },
-    { "role": "Associate Professor (Part-time)", "org": "North South University" },
-    { "role": "Hall Provost", "org": "Begum Sufia Kamal Hall, JU" },
-    { "role": "Member, Sex Tech Lab", "org": "The New School, New York" },
-    { "role": "Trustee Board Member", "org": "National Child Welfare Trust" },
-    { "role": "International Coordinator", "org": "IMRF Bangladesh" }
-  ],
-  "gallery": [
-    { "image": "/assets/img/talk-podium.jpg", "caption": "Keynote · Dept. of Anthropology, University of Rajshahi" },
-    { "image": "/assets/img/talk-panel.jpg", "caption": "Panel · public discussion on gender & rights" },
-    { "image": "/assets/img/talk-media.jpg", "caption": "In conversation · Prothom Alo" },
-    { "image": "/assets/img/engagement.jpg", "caption": "Roundtable · policy & advocacy" }
-  ],
-  "email": "rezwana@juniv.edu",
-  "phone": "+880 1780 758 064",
-  "address": "Department of Anthropology, Jahangirnagar University, Savar, Dhaka-1342, Bangladesh",
-  "scholar": "https://scholar.google.com/citations?user=hTRDeFMAAAAJ&hl=en",
+  "aboutPhoto": "/assets/img/about.jpg",
   "researchgate": "https://www.researchgate.net/profile/Rezwana-Snigdha-2",
-  "university": "https://juniv.edu/teachers/rezwana"
+  "scholar": "https://scholar.google.com/citations?user=hTRDeFMAAAAJ&hl=en",
+  "chips": [
+    "Hijra & Transgender Studies",
+    "Gender & Sexuality",
+    "Feminist Anthropology",
+    "Medical Anthropology",
+    "Body & Identity Politics"
+  ],
+  "eyebrow": "Feminist Anthropologist · Bangladesh",
+  "nameTop": "Rezwana Karim",
+  "about": [
+    "Dr. Rezwana Karim Snigdha is an anthropologist, gender expert, and feminist scholar with over fifteen years of experience in teaching, ethnographic research, training, and advocacy at Jahangirnagar University, where she serves as Associate Professor of Anthropology.",
+    "She earned her PhD at the Auckland University of Technology (2021); her doctoral thesis, “Beyond Binaries: An Ethnographic Study of Hijra in Dhaka, Bangladesh,” is recognised internationally for its sensitive, situated account of gender-diverse life in South Asia.",
+    "Her work moves across gender justice, sexuality and reproductive health, body politics, climate vulnerability, and medical anthropology — always centred on marginalised and gender-diverse communities. She is a member of the Sex Tech Lab at The New School, New York, and holds part-time faculty and review roles at home and abroad.",
+    "Beyond the academy she is a frequent public voice — a television talk-show panellist and commentator on gender justice, censorship, and social change — translating rigorous ethnography into public debate across Bangladesh."
+  ],
+  "brandTop": "Rezwana Karim",
+  "phone": "+880 1780 758 064",
+  "university": "https://juniv.edu/teachers/rezwana",
+  "url": "https://rezwana-karim-snigdha.netlify.app",
+  "aboutQuote": "Ethnographic explorations at the threshold of gender, body, and belonging.",
+  "heroRole": "Professor of Anthropology, Jahangirnagar University · PhD, Auckland University of Technology",
+  "brandAccent": "Snigdha",
+  "bookEn": "In Search of Women's Self · 2023",
+  "gallery": [
+    {
+      "image": "/assets/img/talk-podium.jpg",
+      "caption": "Keynote · Dept. of Anthropology, University of Rajshahi"
+    },
+    {
+      "image": "/assets/img/talk-panel.jpg",
+      "caption": "Panel · public discussion on gender & rights"
+    },
+    {
+      "image": "/assets/img/talk-media.jpg",
+      "caption": "In conversation · Prothom Alo"
+    },
+    {
+      "image": "/assets/img/engagement.jpg",
+      "caption": "Roundtable · policy & advocacy"
+    }
+  ],
+  "portraitPill": "15+ yrs fieldwork",
+  "address": "Department of Anthropology, Jahangirnagar University, Savar, Dhaka-1342, Bangladesh",
+  "bookBn": "নারীসত্তার অন্বেষণে",
+  "nameAccent": "Snigdha",
+  "title": "Dr. Rezwana Karim Snigdha — Feminist Anthropologist, Bangladesh",
+  "portrait": "/assets/img/portrait.jpg",
+  "grant": "World Bank / UGC HEAT Grant — USD 80,000 · 2025 · Top 10.2% nationally",
+  "email": "rezwana@juniv.edu",
+  "description": "Dr. Rezwana Karim Snigdha is one of Bangladesh's foremost feminist anthropologists — Associate Professor at Jahangirnagar University, known for ethnographic research on Hijra communities, gender, body and belonging in South Asia.",
+  "roles": [
+    {
+      "role": "Professor of Anthropology",
+      "org": "Jahangirnagar University"
+    },
+    {
+      "role": "Associate Professor of Anthropology",
+      "org": "Jahangirnagar University"
+    },
+    {
+      "role": "Associate Professor (Part-time)",
+      "org": "North South University"
+    },
+    {
+      "role": "Hall Provost",
+      "org": "Begum Sufia Kamal Hall, JU"
+    },
+    {
+      "role": "Member, Sex Tech Lab",
+      "org": "The New School, New York"
+    },
+    {
+      "role": "Trustee Board Member",
+      "org": "National Child Welfare Trust"
+    },
+    {
+      "role": "International Coordinator",
+      "org": "IMRF Bangladesh"
+    }
+  ]
 }
