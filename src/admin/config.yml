@@ -8,8 +8,8 @@ local_backend: true
 media_folder: "src/assets/img"
 public_folder: "/assets/img"
 
-site_url: https://rezwana-karim-snigdha.netlify.app
-display_url: https://rezwana-karim-snigdha.netlify.app
+site_url: https://rezwana-karim-snigdha.pages.dev
+display_url: https://rezwana-karim-snigdha.pages.dev
 logo_url: /assets/img/portrait.jpg
 
 collections:
